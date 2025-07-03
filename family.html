@@ -1,0 +1,302 @@
+<html>
+<head>
+  <title>My Personal Website</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #a7d0e2, #ffffff);
+      overflow-x: hidden;
+    }
+
+    header {
+      background-image: url('image/buttrfly.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      position: relative;
+      font-size: 3em;
+      z-index: 1;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 10px 0;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #5c0808;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d94aa5;
+    }
+
+    .text-container {
+      overflow: hidden;
+      width: 100%;
+      background: rgb(110, 5, 22, 0.6);
+      padding: 10px;
+    }
+
+    .animated-text {
+      white-space: nowrap;
+      display: inline-block;
+      animation: slideRightToLeft 8s linear infinite;
+      font-size: 22px;
+      color: #f7f7f8;
+    }
+
+    @keyframes slideRightToLeft {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .floating-dolphin {
+      width: 100px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      animation: floatDolphin 4s ease-in-out infinite;
+    }
+
+    @keyframes floatDolphin {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    section {
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 900px;
+      border-radius: 10px;
+      background-color: #fefefe;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 5px;
+      background-color: #e13876;
+      color: white;
+    }
+
+    /* Flip Card Section */
+    .flip-card-section {
+      background: linear-gradient(to bottom right, #cfefff, #ffffff);
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .flip-card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 180px;
+      height: 220px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+
+    .flip-card-front {
+      background-color: #eea3cf;
+    }
+
+    .card-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .flip-card-back {
+      background-color: #cb5a85;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>WELCOME TO MY WORLD</h1>
+  </header>
+
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="aboutme.html">ABOUT ME</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="family.html">FAMILY</a>
+    <a href="experience.html">EXPERIENCE</a>
+    <a href="gallery.html">GALLERY</a>
+  </nav>
+
+
+  <div class="text-container">
+    <div class="animated-text">🕊 “Your family is a gift and a trust from Allah. Nurture them with love, patience and dua.”🕊 </div>
+  </div>
+  <!-- Flip Card Section -->
+  <div class="flip-card-section">
+    <h2 style="color: #850578; margin-bottom: 30px;">Meet My Beloved Family</h2>
+    <div class="flip-card-container">
+      <!-- Card 1 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="image/abah.jpg" alt="Person 1" class="card-image">
+          </div>
+          <div class="flip-card-back">
+            <h3>Mohd Nadzri</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="image/mama.jpg" alt="Person 2" class="card-image">
+          </div>
+          <div class="flip-card-back">
+            <h3>Wan Rimei Salha</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="image/amirul.jpg" alt="Person 3" class="card-image">
+          </div>
+          <div class="flip-card-back">
+            <h3>Muhammad Amirul Naz-mei</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="image/me.jpg" alt="Person 4" class="card-image">
+          </div>
+          <div class="flip-card-back">
+            <h3>Nurul Aisya Naz-mei</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="image/aiman.jpg" alt="Person 5" class="card-image">
+          </div>
+          <div class="flip-card-back">
+            <h3>Muhammad Aiman Naz-mei</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="image/arissa.jpg" alt="Person 6" class="card-image">
+          </div>
+          <div class="flip-card-back">
+            <h3>Nurul Arissa Naz-mei</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="image/afrina.jpg" alt="Person 7" class="card-image">
+          </div>
+          <div class="flip-card-back">
+            <h3>Nurul Afrina Naz-mei</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="image/siblings 2.jpg" alt="Person 7" class="card-image">
+          </div>
+          <div class="flip-card-back">
+            <h3>Siblings</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Ecahhh, All rights reserved | Educational purposes only</p>
+  </footer>
+
+</body>
+</html>

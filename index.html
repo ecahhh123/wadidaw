@@ -1,0 +1,172 @@
+<html>
+<head>
+  <title>My Personal Website</title>
+  <style>
+    body {
+      background-image: url('image/buttrfly.jpg');
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      color: antiquewhite;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      position: relative;
+      font-size: 3em;
+      z-index: 1;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 10px 0;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #024873;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #4abfd9;
+    }
+
+    section {
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 900px;
+      border-radius: 10px;
+      background-color: #fefefe;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .text-container {
+      overflow: hidden;
+      width: 100%;
+      background: rgba(110, 5, 22, 0.6);
+      padding: 10px;
+    }
+
+    .animated-text {
+      white-space: nowrap;
+      display: inline-block;
+      animation: slideRightToLeft 8s linear infinite;
+      font-size: 22px;
+      color: #fefbfd;
+    }
+
+    @keyframes slideRightToLeft {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .floating-dolphin {
+      width: 100px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      animation: floatDolphin 4s ease-in-out infinite;
+    }
+
+    @keyframes floatDolphin {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 5px;
+      background-color: #cd63a8;
+      color: white;
+    }
+
+    /* Extra from assignment image: borders, text, background */
+    .intro-box {
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 2px solid #480133;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      box-shadow: 0 0 10px rgba(234, 139, 215, 0.1);
+      text-align: center;
+    }
+
+    .intro-box h2 {
+      color: rgb(161, 3, 106);
+    }
+
+    .intro-box p {
+      font-size: 18px;
+      color:rgb(237, 118, 212)
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>WELCOME TO MY WORLD</h1>
+  </header>
+
+   <nav>
+    <a href="index.html">HOME</a>
+    <a href="aboutme.html">ABOUT ME</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="family.html">FAMILY</a>
+    <a href="experience.html">EXPERIENCE</a>
+    <a href="gallery.html">GALLERY</a>
+  </nav>
+
+
+  <div class="text-container">
+    <div class="animated-text">🫧it's not easy to be strong, always flying high in the sky🦋</div>
+  </div>
+
+  <section class="intro-box">
+    <h2>Assalamualaikum!</h2>
+    <p>Hello! My name is Ecahhh. This is my personal website. Feel free to explore all my page☃️!</p>
+  </section>
+
+  <body>
+   <div id="jam-container" style="color:white; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color:rgba(0, 0, 0, 0.6); padding:20px 40px; border-radius:20px; text-align:center;">
+  <div id="jam" style="font-size:48px; margin-bottom:10px;"></div>
+  <div id="tarikh" style="font-size:20px;"></div>
+</div>
+  </body>
+
+  <section>
+    <center>
+      <audio controls autoplay>
+        <source src="audio/indreamland.mp3";
+        Your browser does not support the audio element.
+      </audio>
+    </center>
+  </section>
+
+  <footer>
+    <p>Ecahhh, All rights reserved | Educational purposes only</p>
+  </footer>
+
+</body>
+</html>
